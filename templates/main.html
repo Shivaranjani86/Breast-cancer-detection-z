@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Breast cancer detection</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  
+</head>
+
+<body>
+  <header class="header">
+    <img src="{{ url_for('static', filename='logo1.png') }}" style="position: relative;width: 150px;height: 70px;">
+   <a href="#" class="logo" style="text-align-last:left">Sham</a>
+    <nav class="nav-items">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="/login">Login</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <div class="intro">
+      <h1 style="color: rgb(232,204,215)">BREAST CANCER DETECTION</h1>
+      <p></p>
+      <a href="/learn">Learn More</a>
+    </div>
+    <div class="about-me">
+      <div class="about-me-text">
+        <h2>About Us</h2>
+        <p style=" font-size:medium;color:#000;">Breast Cancer is a highly common cancer in women, that develops <br> in the breast tissue. We detect the cancer and find the classification <br>of cancer using deep leaning.
+        <br><p style="font-size: xx-large;color:#000;">"Early Detection For Your Protection"</p></p>
+      </div>
+      <img src="{{ url_for('static', filename='images/pic.jpg') }}" alt="me">
+    </div>
+  </main> 
+  <div class="achievements">
+    <div class="work">
+      <i class="fa fa-heartbeat"></i>
+      <p class="work-heading">Hope</p>
+      <p class="work-text">Believe in the cure.</p>
+    </div>
+    <div class="work">
+      <i class="fas fa-ribbon"></i>
+      <p class="work-heading">Fight</p>
+      <p class="work-text">Every Ribbon Makes A Difference</p>
+    </div>
+    <div class="work">
+      <i class="fas fa-hand-holding-heart"></i>
+      <p class="work-heading">Win</p>
+      <p class="work-text">Cancer Can’t but We CAN.</p>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="bottom-links">
+      <div class="links">
+        <span>More Info</span>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="links">
+        <span>Social Links</span>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
